@@ -4,8 +4,8 @@ useFormik
   import { useFormik } from 'formik'
   
   const formik = useFormik({
-    initialValues: {
-      name: '',
+    initialValues: {   // properties inside this obj must match name attribute of html element
+      name: '',     // we can assign default values here
       email: ''
     }
   })
@@ -36,8 +36,8 @@ function YouTubeForm() {
                         name="name"
                         id="name"
                         placeholder="Enter Name"
-                        onChange={formik.handleChange}
-                        value={formik.values.name}    / here .name is because of name property of an input
+                        onChange={formik.handleChange}   // it will automatically update name 
+                        value={formik.values.name}    // here .name is because of name property of an input
 
                     />
                 </div>
