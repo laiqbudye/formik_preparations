@@ -16,7 +16,7 @@ function YouTubeForm() {
         }
     });
 
-    console.log(formik.errors)
+
     return (
         <div>
             <form onSubmit={formik.handleSubmit}>   // here we have to specify onSubmit event on form
